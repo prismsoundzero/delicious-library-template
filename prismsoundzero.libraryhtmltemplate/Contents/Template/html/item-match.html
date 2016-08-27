@@ -1,0 +1,7 @@
+<a href
+   tabindex="-1"
+   ng-attr-title="{{match.label}}">
+    <span ng-bind-html="match.label.artist | uibTypeaheadHighlight:query"></span>
+    <br>
+    <small ng-bind-html="match.label.title | uibTypeaheadHighlight:query"></small>
+</a>

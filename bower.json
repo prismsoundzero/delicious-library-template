@@ -1,0 +1,31 @@
+{
+  "name": "delicious-library-template",
+  "description": "A Delicious Library 3 Template",
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.3",
+    "angular": "1.5.8",
+    "angular-sanitize": "1.5.8",
+    "angular-hotkeys": "chieffancypants/angular-hotkeys#1.7.0",
+    "angular-spotify": "1.4.2",
+    "font-awesome": "FortAwesome/Font-Awesome#4.6.3",
+    "angular-bootstrap": "2.0.2"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.css"
+      ]
+    },
+    "bootstrap": {
+      "main": []
+    },
+    "angular-bootstrap": {
+      "main": [
+        "ui-bootstrap.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "sass": "git@github.com:sass/sass.git#3.4.22"
+  }
+}

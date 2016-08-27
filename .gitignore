@@ -1,0 +1,7 @@
+/bower_components
+/node_modules
+/.tmp
+/.sass-cache
+/.idea
+/prismsoundzero.libraryhtmltemplate/Contents/Template/css/*.css*
+/prismsoundzero.libraryhtmltemplate/Contents/Template/covers
