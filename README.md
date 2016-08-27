@@ -1,5 +1,7 @@
 ###PrismSoundZero template for Delicious Library 3.
 
+![Preview of template](https://github.com/prismsoundzero/delicious-library-template/blob/master/dist/prismsoundzero.libraryhtmltemplate/Contents/Resources/thumbnail.png)
+
 ####Installation
 1. Download the .zip file and unzip it.
 2. In the folder dist: copy the folder prismsoundzero.libraryhtmltemplate to
