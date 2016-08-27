@@ -1,9 +1,14 @@
 {
   "name": "delicious-library-template",
   "description": "A Delicious Library 3 Template",
-  "version": "1.0.0",
+  "version": "1.1.0-SNAPSHOT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prismsoundzero/delicious-library-template"
+  },
+  "license": "GNU GPLv3",
   "devDependencies": {
-    "grunt": "1.0.0",
+    "grunt": "1.0.1",
     "grunt-angular-templates": "^1.0.3",
     "grunt-autoprefixer": "^3.0.3",
     "grunt-contrib-clean": "^1.0.0",
