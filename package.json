@@ -7,6 +7,9 @@
     "url": "https://github.com/prismsoundzero/delicious-library-template"
   },
   "license": "GNU GPLv3",
+  "scripts": {
+    "deploy": "cp -r ./dist/prismsoundzero.libraryhtmltemplate ~/Library/Containers/com.delicious-monster.library3/Data/Library/Application\\ Support/Delicious\\ Library\\ 3/Templates/"
+  },
   "devDependencies": {
     "grunt": "1.0.1",
     "grunt-angular-templates": "^1.0.3",

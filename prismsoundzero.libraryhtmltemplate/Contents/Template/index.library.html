@@ -30,7 +30,7 @@
                 <a class="nav-link" ng-href="{{::shelf.href}}" ng-bind="::shelf.name"></a>
             </li>
         </ul>
-        <form class="form-inline result-wrapper pull-xs-right" ng-submit="search()">
+        <form class="form-inline result-wrapper pull-right" ng-submit="search()">
             <input id="search" class="form-control" type="text" placeholder="Search" ng-model="models.query">
             <div class="dropdown-menu" ng-hide="!models.query">
                 <div class="artists-wrapper" ng-repeat="artist in artists | filter:models.query | limitTo:5 track by artist">
@@ -83,7 +83,7 @@
         <div class="cards">
             <div id="{{::item.id}}" class="card-wrapper" ng-repeat="item in items | filter:models.q | filter:{artist: models.selectedArtist}:true | orderBy:'+artist' | limitTo:(models.selectedArtist ? undefined : models.limit):models.limitOffset as filteredItems track by item.id">
                 <div class="card">
-                    <img class="card-img-top" ng-click="selectItem(item)" ng-src="covers/{{::item.id}}-300.png"/>
+                    <img class="card-img-top" ng-click="selectItem(item)" ng-src="covers/{{::item.id}}-150.png"/>
                     <div class="card-block">
                         <h4 ng-bind="::item.title" ng-click="selectItem(item)"></h4>
                         <p class="card-text" ng-click="selectArtist(item.artist)" ng-bind="::item.artist"></p>
@@ -92,11 +92,11 @@
             </div>
         </div>
         <div class="limit-select-wrapper clearfix col-xs-12" ng-if="!models.selectedArtist">
-            <span class="btn-group btn-group-sm pull-xs-left" role="group">
+            <span class="btn-group btn-group-sm pull-left" role="group">
                 <button type="button" class="btn btn-secondary" ng-repeat="limit in models.limits" ng-class="{'active': models.limit === limit}" ng-click="changeLimit(limit)" ng-bind="limit"></button>
                 <button type="button" class="btn btn-secondary" ng-class="{'active': !models.limit}" ng-click="changeLimit()">All</button>
             </span>
-            <span ng-show="models.limit" class="btn-group btn-group-sm pull-xs-right" template-url="html/pagination.html" uib-pagination total-items="items.length" ng-model="models.currentPage" items-per-page="models.limit" ng-change="changePage()" role="group"></span>
+            <span ng-show="models.limit" class="btn-group btn-group-sm pull-right" template-url="html/pagination.html" uib-pagination total-items="items.length" ng-model="models.currentPage" items-per-page="models.limit" ng-change="changePage()" role="group"></span>
         </div>
     </div>
 
@@ -149,7 +149,7 @@
                     <a class="nav-link" target="_blank" href="https://github.com/prismsoundzero/delicious-library-template">Prism Sound Zero Template</a>
                 </li>
             </ul>
-            <ul class="nav navbar-nav pull-xs-right">
+            <ul class="nav navbar-nav pull-right">
                 <li class="nav-item">
                     <a class="nav-link" href="http://www.delicious-monster.com" target="_blank">Made with Delicious Library</a>
                 </li>
@@ -166,7 +166,7 @@
         <tr>
             <td>
                 <div class="medium"> <!-- div.medium is mandatory, the parser looks for it -->
-                    $coverImage300
+                    $coverImage150
                     <div class="medium-item" data-uuid="$uuidString" title="$title" data-artist="$creatorsCompositeString" data-description="$primaryDescriptionString" data-asin="$asin" data-rating="$rating"></div>
                 </div>
             </td>
