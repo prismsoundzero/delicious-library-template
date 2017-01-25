@@ -1,7 +1,7 @@
 {
   "name": "delicious-library-template",
   "description": "A Delicious Library 3 Template",
-  "version": "1.1.1",
+  "version": "1.1.2-SNAPSHOT",
   "repository": {
     "type": "git",
     "url": "https://github.com/prismsoundzero/delicious-library-template"
