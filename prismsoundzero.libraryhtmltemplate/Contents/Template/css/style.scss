@@ -176,7 +176,6 @@ body.dark {
   }
 
   .top-navbar {
-    padding-bottom: $spacer;
     border-bottom: $border-default;
   }
 
@@ -231,6 +230,9 @@ body.dark {
   }
   .album-info {
     margin-top: $spacer-y;
+  }
+  .media .media-object {
+    margin-bottom: $spacer;
   }
 }
 
